@@ -9,6 +9,7 @@
         <style>
             body {
                 margin: 0 auto;
+                background-color: black
             }
             video {
                 width: 100%;
@@ -18,6 +19,10 @@
     </head>
 
     <body>
-        <video src="rose-final.mp4" autoplay="autoplay"></video>
+        <video id="video" src="rose-final.mp4" autoplay muted playsinline controls></video>
+        <script>
+            document.getElementById('video').muted = false;
+            document.getElementById('video').play();
+        </script>
     </body>
 </html>
